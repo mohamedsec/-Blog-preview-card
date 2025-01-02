@@ -41,9 +41,10 @@ body {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   background-color: var(--white);
   box-shadow: 8px 8px 0 0 black;
+  border: 1px solid var(--grey9);
 }
 
 .container > img {
@@ -87,7 +88,7 @@ body {
   font-family: Figtree-var;
   line-height: 150%;
   letter-spacing: 0px;
-  color: var(--grey9);
+  color: var(--grey5);
 }
 .textp3 {
   font-size: 16px;
