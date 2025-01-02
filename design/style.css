@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Figtree-it;
+  src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Figtree-var;
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Figtree-Ebold;
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf");
+}
+@font-face {
+  font-family: Figtree-Sbold;
+  src: url("../assets/fonts/static/Figtree-SemiBold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --grey5: hsl(0, 0%, 42%);
+  --grey9: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-size: 16px;
+  font-family: Figtree-var;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--yellow);
+}
+.container {
+  width: 384px;
+  height: 522px;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--white);
+  box-shadow: 8px 8px 0 0 black;
+}
+
+.container > img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.imageUsr {
+  width: 32px;
+  height: 32px;
+}
+.imageUsr > img {
+  width: 100%;
+  height: 100%;
+}
+.textp1 {
+  font-size: 24px;
+  font-family: Figtree-Ebold;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: var(--grey9);
+}
+.textp1:active,
+.textp1:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+.textp2 {
+  font-size: 16px;
+  font-family: Figtree-var;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: var(--grey9);
+}
+.textp3 {
+  font-size: 14px;
+  font-family: Figtree-var;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: var(--grey5);
+}
+.learn {
+  background-color: var(--yellow);
+}
+.textp4 {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Figtree-Ebold;
+
+  line-height: 150%;
+  letter-spacing: 0px;
+  width: fit-content;
+  color: var(--grey9);
+}
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 95%;
+    width: 327px;
+    height: 501px;
+  }
+  .container > img {
+    width: 100%;
+    max-width: 279px;
+    border-radius: 10px;
+    height: 200px;
+  }
+  .text {
+    max-width: 100%;
+    width: 279px;
+    height: 173px;
+  }
+  .learn {
+    width: 73px;
+    height: 26px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .textp2 {
+    font-size: 12px;
+    font-family: Figtree-var;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--grey9);
+  }
+  .textp1 {
+    font-size: 20px;
+    font-family: Figtree-Ebold;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--grey9);
+  }
+}
+@media screen and (max-width: 300px) {
+  .user {
+    display: none;
+  }
+}
